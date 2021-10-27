@@ -31,11 +31,11 @@ namespace AscDec
             var seed = DateTime.Now.Millisecond;
             var rnd = new Random(seed);
 
-            var questionIndexes1 = Enumerable.Range(0, 3).Select(_ => rnd.Next(arr1.Length - 1)).ToArray();
-            var questionIndexes2 = Enumerable.Range(0, 3).Select(_ => rnd.Next(arr2.Length - 1)).ToArray();
-            var questionIndexes3 = Enumerable.Range(0, 3).Select(_ => rnd.Next(arr3.Length - 1)).ToArray();
-            var questionIndexes4 = Enumerable.Range(0, 3).Select(_ => rnd.Next(arr4.Length - 1)).ToArray();
-            var questionIndexes5 = Enumerable.Range(0, 3).Select(_ => rnd.Next(arr5.Length - 1)).ToArray();
+            var questionIndexes1 = Enumerable.Range(0, 5).Select(_ => rnd.Next(arr1.Length - 1)).ToArray();
+            var questionIndexes2 = Enumerable.Range(0, 5).Select(_ => rnd.Next(arr2.Length - 1)).ToArray();
+            var questionIndexes3 = Enumerable.Range(0, 5).Select(_ => rnd.Next(arr3.Length - 1)).ToArray();
+            var questionIndexes4 = Enumerable.Range(0, 5).Select(_ => rnd.Next(arr4.Length - 1)).ToArray();
+            var questionIndexes5 = Enumerable.Range(0, 5).Select(_ => rnd.Next(arr5.Length - 1)).ToArray();
 
             var watch = new Stopwatch();
             watch.Start();

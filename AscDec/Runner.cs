@@ -16,7 +16,8 @@ namespace AscDec
 
         static long Run(int[] array, IEnumerable<int> questionIndexes, Func<int[], int, int> searcher)
         {
-            return questionIndexes.AsParallel().Select(questionIdx => Run(array, searcher, questionIdx)).Sum();
+            // return questionIndexes.AsParallel().Select(questionIdx => Run(array, searcher, questionIdx)).Sum(); // runs faster without parallelization due to overhead
+            return questionIndexes.Select(questionIdx => Run(array, searcher, questionIdx)).Sum();
         }
 
         static long Run(int[] array, Func<int[], int, int> searcher, int questionIdx)
