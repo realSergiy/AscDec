@@ -65,6 +65,7 @@ namespace AscDec
 
         static int Find(int[] array, int numberToFind)
         {
+            // replace this implementation and see if you can beat the IndexOf method
             for (var index = 0; index < array.Length; index++)
             {
                 if (array[index] == numberToFind)
