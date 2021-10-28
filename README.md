@@ -1,4 +1,4 @@
-# AscDec
+# AscDesc
 
 Would you beat the O(n) performance of the Array.IndexOf to find a number in the array, provided that:
 
